@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="https://configurator.inforcloudsuite.com/api/v3/ProductConfigurator.svc?wsdl" uri="wsdl/configurator.inforcloudsuite.com/api/v3/ProductConfigurator.svc.wsdl"/>
+    <system systemId="https://configurator.inforcloudsuite.com/api/v3/ProductConfigurator.svc?wsdl=wsdl0" uri="wsdl/configurator.inforcloudsuite.com/api/v3/ProductConfigurator.svc.wsdl_wsdl0.wsdl"/>
+    <system systemId="https://configurator.inforcloudsuite.com/api/v3/ProductConfigurator.svc?xsd=xsd0" uri="wsdl/configurator.inforcloudsuite.com/api/v3/ProductConfigurator.svc.xsd_xsd0.xsd"/>
+    <system systemId="https://configurator.inforcloudsuite.com/api/v3/ProductConfigurator.svc?xsd=xsd1" uri="wsdl/configurator.inforcloudsuite.com/api/v3/ProductConfigurator.svc.xsd_xsd1.xsd"/>
+    <system systemId="https://configurator.inforcloudsuite.com/api/v3/ProductConfigurator.svc?xsd=xsd2" uri="wsdl/configurator.inforcloudsuite.com/api/v3/ProductConfigurator.svc.xsd_xsd2.xsd"/>
+</catalog>
