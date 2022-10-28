@@ -135,8 +135,14 @@ public class ProductConfiguratorService
         return PRODUCTCONFIGURATORSERVICE_WSDL_LOCATION;
     }
 
-    ProductConfiguratorServiceProxy getBasicHttpBindingProductConfiguratorServiceProxy() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
+    ProductConfiguratorServiceProxy getBasicHttpBindingProductConfiguratorServiceProxy() throws MalformedURLException {
+        
+             URL serviceLocation = new URL("https://configurator.inforcloudsuite.com/api/v3/ProductConfigurator.svc?wsdl");
+         ProductConfiguratorService service = new ProductConfiguratorService (serviceLocation);
+        
+         //This cannot be null - Don't know how to make this work
+         
+         return null;
+        
+       }
 }

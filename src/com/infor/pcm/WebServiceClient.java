@@ -4,7 +4,6 @@
  */
 package com.infor.pcm;
 
-
 import java.net.MalformedURLException;
 import java.util.UUID;
 
@@ -12,15 +11,18 @@ import java.util.UUID;
  *
  * @author pdownton
  */
-public class WebServiceClient 
-{
-  private  ProductConfiguratorServiceProxy proxy;
+public class WebServiceClient {
+    
+    private final ProductConfiguratorServiceProxy proxy;
 
-    public static void main(String[] args) throws MalformedURLException 
-    {
-        
+    /**
+     * @param args the command line arguments
+     * @throws java.net.MalformedURLException
+     */
+    public static void main(String[] args) throws MalformedURLException {
+        // TODO code application logic here
         WebServiceClient client = new WebServiceClient();
-   
+        
        
         InputParameters inputParameters = getInputParameters();
         
@@ -88,13 +90,18 @@ public class WebServiceClient
         
     }
     
-    public WebServiceClient() throws MalformedURLException
+    public WebServiceClient() throws MalformedURLException 
     {  
-       
-       ProductConfiguratorService service = new ProductConfiguratorService(); 
-       
-       // problem setting up the proxy
-       ProductConfiguratorServiceProxy proxy = service.getBasicHttpBindingProductConfiguratorServiceProxy();
+        
+        ProductConfiguratorService service = new ProductConfiguratorService();
+        proxy = service.getBasicHttpBindingProductConfiguratorServiceProxy();
+        
+//         URL serviceLocation = new URL("https://production/ConfigService/ProductConfigurator.svc?wsdl");
+//         ProductConfiguratorService service = new ProductConfiguratorService (serviceLocation);
+         
+//       URL serviceLocation = new URL("https://configurator.inforcloudsuite.com/api/v3/ProductConfigurator.svc?wsdl");
+//       ProductConfiguratorService service = new ProductConfiguratorService(); 
+
 
     }
     
